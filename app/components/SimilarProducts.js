@@ -31,9 +31,10 @@ export default function SimilarProducts() {
 
                     {products.length > 0 ?
                         <div className="grid grid-cols-5 gap-4">
-                            {products.map(product => {
+                            {products.map(product => (
                                 <ProductComp key={product.id} product={product}/>
-                            })}
+                                ))}
+                        
                         </div>
 
                         : <div className="flex items-center justify-center">
