@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import MainLayout from "../layouts/MainLayout"
 import CheckoutItem from "../components/CheckoutItem"
 
@@ -67,10 +68,13 @@ export default function Checkout() {
                                         role="alert"
                                         className="text-red-700 text-center font-semibold relative top-2"
                                     />
-
-                                    <button type="submit" className="mt-4 bg-blue-600 text-lg w-full text-white font-semibold p-3 rounded-full ">
-                                        Confirm and Pay
-                                    </button>
+                                    
+                                    {/* Temp Link for test purpose */}
+                                    <Link href='/success'>
+                                        <button type="submit" className="mt-4 bg-blue-600 text-lg w-full text-white font-semibold p-3 rounded-full ">
+                                            Confirm and Pay
+                                        </button>
+                                    </Link>
                                 </form>
                             </div>
                             <div className="flex items-center p-4 justify-center gap-2 border-t ">

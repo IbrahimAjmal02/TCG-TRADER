@@ -4,6 +4,7 @@ import MainLayout from "../layouts/MainLayout"
 import SimilarProducts from "../components/SimilarProducts"
 import Product from "../components/Product"
 import CartItem from "../components/CartItem.js"
+import Link from "next/link"
 
 export default function Cart() {
     const product = 
@@ -28,9 +29,11 @@ export default function Cart() {
                         <div id="GoToCheckout" className="md:w-[33%] absolute top-0 right-0 m-2">
                             <div className="bg-white p-4 border">
 
-                                <button className="flex items-center justify-center bg-blue-600 w-full text-white font-semibold p-3 rounded-full mt-4">
-                                    Go to Checkout
-                                </button>
+                                <Link href="/checkout">
+                                    <button className="flex items-center justify-center bg-blue-600 w-full text-white font-semibold p-3 rounded-full mt-4">
+                                        Go to Checkout
+                                    </button>
+                                </Link>
 
                                 <div className="flex items-center justify-between mt-4 text-sm mb-1">
                                     <div>Items (2)</div>

@@ -43,13 +43,16 @@ export default function TopMenu() {
                         </li>
                     </ul>
                     <ul id="TopMenuRight" className="flex items-center text-[11px] text-[#333333] px-2 h-8">
-                        <li className="flex items-center gap-2 px-3 hover:underline cursor-pointer">
-                            <img width={32} src="/images/canada.png"/>
-                            Ship to
+                        <li>
+                            <Link href={"/address"} className="flex items-center gap-2 px-3 hover:underline cursor-pointer">
+                                <img width={32} src="/images/canada.png"/>
+                                Ship to
+                            </Link>
                         </li>
+                        
                         <li className="px-3 hover:underline cursor-pointer">
                             <div className="relative">
-                                <AiOutlineShoppingCart size={22} />
+                                <Link href={"/cart"}><AiOutlineShoppingCart size={22} /></Link>
                                 <div className="absolute text-[10px] -top-[2px] -right-[5px] bg-red-500 w-[14px] h-[14px] rounded-full text-white">
                                     <div className="flex items-center justify-center -mt-[1px]"> 3</div>
                                 </div>
